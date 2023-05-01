@@ -1,0 +1,251 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='public/style.css' rel='stylesheet'>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/bootstrap-datetimepicker/bootstrap-datetimepicker.min.css">
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+    <script src="./public/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js"></script>
+
+    
+    
+
+
+    
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class="bx bxl-html5"></i>
+                <div class="logo_name">Anh Phuoc</div>
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+         <ul class="nav-list">
+            <li>
+                <i class="bx bx-search"></i>
+                <input type="text" placeholder="search...">
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="">
+                    <i class="bx bx-grid-alt"></i>
+                    <span class="links_name">Dashboard</span>
+                    <span class="tooltip">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="bx bx-home-alt"></i>
+                    <span class="links_name">Home</span>
+                    <span class="tooltip">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="bx bx-compass"></i>
+                    <span class="links_name">Explore</span>
+                    <span class="tooltip">Explore</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="bx bx-movie-play"></i>
+                    <span class="links_name">Library</span>
+                    <span class="tooltip">Library</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="bx bx-folder"></i>
+                    <span class="links_name">File Manager</span>
+                    <span class="tooltip">File Manager</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="bx bx-cart-alt"></i>
+                    <span class="links_name">Order</span>
+                    <span class="tooltip">Order</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="bx bx-heart"></i>
+                    <span class="links_name">Save</span>
+                    <span class="tooltip">Save</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="bx bx-cog"></i>
+                    <span class="links_name">Setting</span>
+                    <span class="tooltip">Setting</span>
+                </a>
+            </li>
+         </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="./public/img/polime.jpg" alt="">
+                    <div class="name_job">
+                        <div class="name">Anh Phuoc</div>
+                        <div class="job">Web Developer</div>
+                    </div>
+                </div>
+                <i class="bx bx-log-out" id="log_out"></i>
+            </div>
+        </div>
+    </div>
+    <div class="home_content">
+        <div class="container-fluid">
+            <input type="hidden" name="token" id="token">
+            <div style="background-color: antiquewhite;border-radius: 10px;padding:10px; margin-top: 20px;">
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="firstName">Ngày bắt đầu</label>
+                        <input type="text" class="form-control" id="start_day" placeholder="Ngày bắt đầu">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="lastName">Máy nhánh</label>
+                        <select class="form-control">
+                            <option selected>Chọn máy nhánh</option>
+                            <option value="">800</option>
+                            <option value="">801</option>
+                            <option value="">802</option>
+                            <option value="">803</option>
+                            <option value="">804</option>
+                            <option value="">805</option>
+                            <option value="">806</option>
+                            <option value="">807</option>
+                            <option value="">808</option>
+                            <option value="">809</option>
+                            <option value="">810</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="firstName">Đầu số</label>
+                        <select class="form-control">
+                            <option selected>Chọn đầu số</option>
+                            <option value="">0902312242</option>
+                            <option value="">0398244379</option>
+                            <option value="">0343177954</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="lastName">Số gọi</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Số gọi">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="firstName">Ngày kết thúc</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="Ngày kết thúc">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="lastName">Trạng thái</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Trạng thái">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="firstName">Loại cuộc gọi</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="Loại cuộc gọi">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="lastName">Số nhận</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Số nhận">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+            
+            </div>
+            <div>
+                
+                <button type="button" data-linkedid="1680680139.493" onclick="__download(this)">Submit</button>
+                
+            </div>
+            <div>
+                <a href="http://localhost:5000/download/1680680139.493/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRhIjoieDk4OE9UbFozN2VndHZvTFFCUlR2dmtMWUJoZ1FVOHMxcEdtaGlmVDVaXC9ZemRHVkkyOHlTV0UwYUVwZHU3U0NzdEpxbkxzeUJ4WFlZSTRQXC9Tc0ZmXC9wU1E3M09cL05lcXpMeGIySEJhYU5IbzRhMXpoMmg3YmJpdzBhMzRKaE5UdDdWa0c3TlhyekJOYUE3TFpQUExZd2FoeEFJaHk3YWhBU1k1XC9XM1drOGh3czkzbkJnNGRKelpBeldxYXgyOXFhWGdjaXEyWWV3RG9HSjRjaXhaTmZBT2pyTzRFWkpueG5ETEhzdGZQVFBMb1lWU3NXWGVKM01MZHc1SWp1VHZHWmZ2QnNUUDZwM09hc3M2UDhoTE1YTldZY2NpckRxcVR3YVN0NTdlUWtDSzZwdFJuSU9WWXFnNWJnRG9KdG82dEVrM1N4RXhnWjZVQUh3U1wvQUxIMHdjUm95aUg2UkpXV1JLSE1sUU1yOEVYdXVDUjRVRVlnZFp3T25iOUMrSkNxUWFhZnZSTWJSM25kNkxRVHdBMERqNW1sNHpNUVVXYWVDVkp1a2ZraWQ5VUpLcVwveHRwZGE4OGQwa2t5Um1sY20yUlVJN2F6ZWo2cVdoVnVsQ3BJUVwvcGNRRFQyQStKWkFrTmhKQzhUXC96cllNamZMQzdZZWF5ZkpZNVRyand3cE9HXC9cLzlyUEd1ang2M0hYZDFuK0JoMm1lZjM0cDZQVFVIWEl1QWdNc3M5ZmN2SUp6bTlSd2Q2UTlIODg0N1Z5aFd0UllkQWZaSUROcURGRGJmdEw3WU9WczMwWHh5Z05cL0NuK1NYZjdqNWpDais5SFNwTmo4VW9qdkVqSWZOVlBRQWh3T0RuXC9rRzhsNHQ1MHpHOTB0REQwcHhtbzdpZG9aQ0xFZ0hcL0xqajI3ZkEwdUhuQUxVMVI0eWNzVmRiK1FybXErdmF0U0FTa0Z1TVBjTlwvMGtUM2o1MkFYVDZib0NJS25PRnhqQnBOMVJsYVJuMWt0QlQ0bEpIQWtUdzhiYzkwWGNmQ05RT0ZJSVRQclE3VWJDWm9KbzRtRndha3hrbERrclpvWUpvNWppYllIWjAyUkhGSXYzXC9aMG5BUXExVTFKeGV3TDE4YjZDcWlIZUdqM0lwcDNRQ3BYQUErbEJTajI1QytBU0VoZTBZV3dBV0RNVk5KeEhKZ1FxUVdVcDZSMG96eWE0WkJMaURaSVU2bzhVYm5ZeHJBWVwvS1RVTG9SeDEyZVAwb1JINE9uU0d1K29hV2s3K1NVem9wTGNxeVZJc05HeFBCZktFbWV1ZWd3eHNoZGZnM2VcL2Z6OGdGYWRNXC9BNmZTbjl6d1A1SElRNm92ZjFYTzVtVlFNaDhlN3RJMDh1eXA5VW1uK1ROZ3ZSXC9DRHAxa3lBNlFZK080SXN5YXp6a21OdDlranhSQzlva053TUl3eXZ0UjR4WHI4MXFxZCtFQ1Q0RmljYkllRU1SajlFNmVDZnp6SDhYdzFPRHhQZzc2eFhJNnN5R1duREk0S0xFbWl6UExjVlRGTzdJMGFRUTRyQ3A3cEJTRisyZnV1cUZYR2U1ZHJZNTVTQU5WVFlxdEdVWEJZPSJ9.1QRQW5phwr4cgggZa_062HOjs9GQQ9Q9ZoUVEHFeaog">Download</a>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector(".bx-search");
+
+        btn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+        searchBtn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+		
+		
+		function __download(e){
+			let linkedid = $(e).data('linkedid');
+            let token = $("#token").val();
+            // console.log(linkedid)
+            $.ajax({url:"http://localhost:5000/download",type:"GET",dataType:"json",data:{"linkedid":linkedid, 'token':token},async:true, cache:false,success:function(e){
+
+            }});
+		}
+        $(document).ready(function(){
+            // $("#start_day").datetimepicker({format:'d.m.Y h.i.s'});
+            jQuery('#start_day').datetimepicker({format: "DD-MM-YYYY HH:mm:ss",});
+
+            let isToken = "123";
+            // Sử dụng hàm getData để lấy dữ liệu và xử lý
+            __isToken().then(function(data) {
+                isToken = data.data;
+                $("#token").val(isToken);
+                
+            }).catch(function(error) {
+                // Xử lý lỗi nếu có
+            });
+            
+            console.log(isToken);
+        });
+       
+    //    async function __isToken(){
+    //         $.ajax({url:"http://localhost:5000/token",type:"GET",dataType:"json",async:true, cache:false,
+    //         success:function(e){
+    //             return  e.data;
+    //         }});
+    //     }
+
+        function __isToken() {
+            return new Promise(function(resolve, reject) {
+                $.ajax({
+                url: 'http://localhost:5000/token',
+                success: function(data) {
+                    resolve(data);
+                },
+                error: function() {
+                    reject('Error!');
+                }
+                });
+            });
+        }
+        
+        
+		
+    </script>
+</body>
+</html>
